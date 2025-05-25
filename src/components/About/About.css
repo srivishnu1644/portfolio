@@ -1,0 +1,121 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to top */
+    gap: 20px; /* Reduce gap to bring elements closer */
+    margin: 90px 170px;
+    margin-bottom:10vh;
+    position: relative;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 40px;
+}
+
+.about-left {
+    flex: 2;
+    text-align: left;
+}
+
+.about-right {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.about-image img {
+    max-width: 180%; /* Increased size */
+    height: auto;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(119, 255, 255, 0.849);
+    margin-right:30px;
+    margin-top:60px;
+}
+
+.about-right h1{
+    font-size: 100px;
+    font-weight: 700;
+    color: white;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+}
+.about-sections{
+    display: flex;
+    gap: 100px;
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.about-para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 2; /* Increased line spacing */
+    margin-top: 30vh; /* Reduced margin to move paragraph up */
+    margin-bottom: 90px; /* Increased gap after paragraph */
+    text-align:left; /* Right align paragraph */
+}
+
+@media (max-width:768px){
+    .about {
+        margin: 20px; /* Reduced margin for smaller screens */
+        padding: 0 15px; /* Add horizontal padding for better readability */
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to left */
+    }
+
+    .about-left, .about-right {
+        width: 100%; /* Full width for both sections */
+        text-align: left; /* Align text to left */
+    }
+
+    .about-image {
+        display: none; /* Hide image in mobile view */
+    }
+
+    .about-right {
+        order: 0; /* Show right side second */
+        text-align: left; /* Align heading left */
+    }
+
+    .about-left {
+        order: 1; /* Show left side first */
+    }
+
+    .about-image img {
+        max-width: 100%; /* Responsive image size */
+        margin-left: 0; /* Remove negative margin */
+        margin-top: 20px; /* Adjust top margin */
+    }
+
+    .about-right h1 {
+        font-size: 70px;
+        margin-left: 0;
+        text-align: left; /* Align heading left */
+    }
+
+    .about-para {
+        font-size: 25px; /* Larger font size for mobile */
+        margin-top: 20px; /* Adjust top margin for paragraph */
+        text-align: left; /* Align paragraph left */
+        line-height: 1.8; /* Improve line height for readability */
+    }
+}

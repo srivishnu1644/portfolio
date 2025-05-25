@@ -1,0 +1,145 @@
+/* Modernized Achievements component CSS with animations and hover effects, without box shadows */
+
+.achievements-container {
+  display: flex;
+  flex-direction: row;
+  gap:100px; /* Reduced gap between skills and achievements */
+  width: 90%; /* Reduced width */
+  align-items: flex-start;
+  padding: 1rem;
+  margin-top: 20vh;
+  margin-bottom: 30vh; /* Added space below Achievements section */
+  animation: fadeIn 1s ease forwards;
+}
+
+
+.skills-section, .achievements-section {
+  flex: 1.5; /* Increased flex to make skills section bigger */
+  padding: 1rem;
+  background: linear-gradient(135deg, #1f1f1f, #121212);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  min-height: 600px; /* Increased height */
+  margin-top:15vh;
+}
+
+.skills-section:hover, .achievements-section:hover {
+  transform: translateY(-10px);
+}
+
+.skills-section h2, .achievements-section h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #5ec8d6;
+  padding-bottom: 0.5rem;
+  user-select: none;
+  text-align: center;
+  right: auto;
+}
+
+.skills-section {
+  text-align: left;
+  margin-left: 10vw; /* Increased left margin to move skills section more right */
+}
+
+.achievements-section {
+  text-align: left;
+}
+
+.skill-bar {
+  margin-bottom: 2rem; /* Increased space between skills */
+  user-select: none;
+}
+
+.skill-label {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.05em;
+}
+
+.bar-container {
+  width: 90%;
+  background-color: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.bar {
+  height: 100%;
+  background: linear-gradient(to right, #3a8d99, #b76e2e);
+  transition: background 0.3s ease;
+}
+
+.skill-bar:hover .bar {
+  background: linear-gradient(to right, #5ec8d6, #da7c25);
+}
+
+.achievemnts-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.achievemnt {
+  background-color: rgba(0, 0, 0, 0.7); /* Reduced brightness */
+  border-radius: 15px;
+  padding: 30px 40px; /* Increased padding for bigger box */
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem; /* Increased font size */
+  line-height: 1.6;
+  transition: transform 0.3s ease;
+  cursor: default;
+  user-select: none;
+}
+
+.achievemnt:hover {
+  transform: translateY(-8px) scale(1.05);
+  color: #fff;
+  box-shadow: 0 0 10px 3px #5ec8d6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width: 768px) {
+  .achievements-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; /* Reduced gap for smaller screens */
+  }
+
+  .skills-section, .achievements-section {
+    width: 100%; /* Full width on smaller screens */
+    margin-left: 35px; /* Reset left margin */
+    margin-top: 0; /* Reset top margin */
+  }
+
+  .skills-section h2, .achievements-section h2 {
+    font-size: 4rem; /* Adjusted font size for smaller screens */
+  }
+
+  .skill-label {
+    font-size: 1rem; /* Adjusted font size for smaller screens */
+  }
+
+  .achievemnt {
+    font-size: 1.1rem; /* Adjusted font size for smaller screens */
+    padding: 20px; /* Adjusted padding for smaller screens */
+  }
+}

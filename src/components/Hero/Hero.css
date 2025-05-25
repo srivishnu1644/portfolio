@@ -74,6 +74,7 @@
   cursor: pointer;
   transition: 0.5s;
   border: white 2px solid;
+  colour:white;
 }
 
 .hero-connect:hover

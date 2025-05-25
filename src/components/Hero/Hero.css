@@ -68,12 +68,13 @@
   transition: 0.5s;
 }
 .hero-resume{
-   padding: 25px 45px;
+  padding: 25px 45px;
   border-radius: 50px;
   font-size: 22px;
   cursor: pointer;
   transition: 0.5s;
   border: white 2px solid;
+<<<<<<< HEAD
   color: white;
 }
 
@@ -202,6 +203,9 @@
   cursor: pointer;
   transition: 0.5s;
   border: white 2px solid;
+=======
+  color:white;
+>>>>>>> fc26068 (Initital commit)
 }
 
 .hero-connect:hover

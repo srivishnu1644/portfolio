@@ -1,58 +1,59 @@
 .hero-img-container {
-  width: 300px;             
-  height: 300px;
+  width: 250px;
+  height: 290px;
+  background-color: #fbb03b; /* Orange background */
+  border-radius: 50%; /* Circular container */
   display: flex;
+  justify-content: flex-end; /* Align image to right */
   align-items: center;
-  justify-content: center;
-  background: #e7d5ac;      
-  border-radius: 30px;
-  margin-bottom: 40px; /* Increased margin-bottom for more gap */
-  padding: 5px; /* Increased padding for better centering */
-  box-sizing: border-box; /* Include padding in size */
+  padding: 10px; /* Padding for white border */
+  box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 .hero img {
-  width: 270px;         
-  height: 270px;        
-  object-fit: cover;    
-  border-radius: 50%;   
-  border: 10px solid #fff; 
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15); 
-  margin: auto; /* Center image inside container */
-} 
+  width: 260px;
+  height: 269px;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 0; /* No border radius for irregular shape */
+  border: 5px solid white; /* White outline */
+  box-shadow: none;
+  display: block;
+}
 
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 50px; /* Increased gap between image and text */
+  gap: 50px;
 }
 
 .hero h1 {
   text-align: center;
   width: 70%;
   font-weight: 600;
-  font-size: 75px; 
-
+  font-size: 75px;
 }
 
 .hero span {
-  background: linear-gradient(270deg, #DA7C25  10%, #5ec8d6 100%);
+  background: linear-gradient(270deg, #DA7C25 10%, #5ec8d6 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hero p {
-  font-size: 24px; 
+  font-size: 24px;
   width: 70%;
   text-align: center;
   line-height: 40px;
 }
+
 .hero-action {
   display: flex;
-  gap: 25px; 
+  gap: 25px;
   align-items: center;
   font-size: 24px;
   font-weight: 500;
@@ -62,17 +63,19 @@
 .hero-connect {
   padding: 25px 45px;
   border-radius: 50px;
-  background: linear-gradient(267deg, #DA7C25  0.36%, #5ec8d6 102.67%);
+  background: linear-gradient(267deg, #DA7C25 0.36%, #5ec8d6 102.67%);
   font-size: 22px;
   cursor: pointer;
   transition: 0.5s;
 }
-.hero-resume{
+
+.hero-resume {
   padding: 25px 45px;
   border-radius: 50px;
   font-size: 22px;
   cursor: pointer;
   transition: 0.5s;
+<<<<<<< HEAD
   border: white 2px solid;
 <<<<<<< HEAD
   color: white;
@@ -206,51 +209,60 @@
 =======
   color:white;
 >>>>>>> fc26068 (Initital commit)
+=======
+  border: none;
+  color: white;
+>>>>>>> 570a604 (Update Hero, Achievements, and About components styles and content)
 }
 
-.hero-connect:hover
-{
+.hero-connect:hover {
   transform: scale(1.05);
   border: 2px solid #fff;
 }
-.hero-resume:hover{
+
+.hero-resume:hover {
   transform: scale(1.05);
   border: 2px solid #5ec8d6;
 }
 
 @media (max-width: 768px) {
-  .hero img{
-    margin-top: 0px;
-    width:260px;
- 
+  .hero-img-container {
+    width: 260px;
+    height: 260px;
+    padding: 8px;
+    justify-content: flex-end;
   }
-  .hero-img-container{
-    margin-bottom: 1px;          
-  
+
+  .hero img {
+    width: 240px;
+    height: 240px;
   }
-  
-  .hero h1{
-    margin-top: 50px ;
+
+  .hero h1 {
+    font-size: 50px;
     width: 90%;
-    font-size: 50px ;
   }
+
   .hero p {
     width: 60%;
     font-size: 18px;
     line-height: 32px;
-    margin:10px 0;
+    margin: 10px 0;
   }
+
   .hero-action {
     font-size: 18px;
     gap: 16px;
     font-weight: 500;
     margin-bottom: 50px;
   }
-  .hero-connect{
+
+  .hero-connect {
     padding: 20px 30px;
     border-radius: 40px;
   }
-  .hero-resume{
+
+  .hero-resume {
     padding: 20px 30px;
     border-radius: 40px;
   }

@@ -128,15 +128,16 @@
     }
 
     .about-right h1 {
-        font-size: 70px;
+        font-size: 40px;
         margin-left: 0;
         text-align: left; /* Align heading left */
     }
 
     .about-para {
-        font-size: 25px; /* Larger font size for mobile */
+        font-size: 20px; /* Larger font size for mobile */
         margin-top: 20px; /* Adjust top margin for paragraph */
         text-align: left; /* Align paragraph left */
-        line-height: 1.8; /* Improve line height for readability */
+        line-height: 1.8; 
+        margin-bottom:20vh;/* Improve line height for readability */
     }
 }

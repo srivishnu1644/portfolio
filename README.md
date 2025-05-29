@@ -1,12 +1,81 @@
-# React + Vite
+# 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive and modern **portfolio website** built using **React.js**. It showcases my professional profile, skills, and contact information in a clean and visually appealing layout.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Built with **React.js** and **Vite**
+- 🎨 Custom CSS styling for a clean UI
+- 📱 Fully responsive design (mobile & desktop)
+- 🧠 Sections: Home, About, Skills, Projects, Contact
+- 🔗 External links to GitHub, LinkedIn, and more
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+portfolio-react/
+├── public/
+├── src/
+│ ├── assets/
+│ ├── components/
+│ ├── pages/
+│ └── App.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+
+
+## 🛠️ Installation & Setup
+
+To run this project locally:
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/yourusername/portfolio-react.git
+
+# 2. Navigate to the project folder
+cd portfolio-react
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+
+Then open your browser at:
+👉 http://localhost:5173
+
+## 🌐 Deployment
+This portfolio is live and hosted on Netlify.
+Live URL: https://srivishnu-portfolio.netlify.app
+
+To deploy your own version:
+
+Push to GitHub
+
+Connect to Netlify
+
+Set npm run build as the build command
+
+Set dist as the publish directory
+
+## 👨‍💻 Tech Stack
+Frontend: React.js, Vite
+
+Styling: HTML, CSS
+
+Deployment: Netlify
+
+## 🧑‍🎓 Author
+Sri Vishnu
+Aspiring Java Developer | Web Dev Enthusiast
+📫 Reach me on LinkedIn
+
+## 📄 License
+This project is open-source and available under the MIT License.
+
+---
+
+Once you've added this file, your repo will look **clean, professional, and intentional** — and that’s 🔑 in the dev world.
+
+Want help with pushing the repo to GitHub too? Or should I send you a new ZIP with this `README.md` added in?
+

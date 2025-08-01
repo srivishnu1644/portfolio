@@ -75,9 +75,9 @@
   font-size: 22px;
   cursor: pointer;
   transition: 0.5s;
-<<<<<<< HEAD
+
   border: white 2px solid;
-<<<<<<< HEAD
+
   color: white;
 }
 
@@ -146,7 +146,7 @@
 .hero img {
   width: 270px;         
   height: 270px;        
-  object-fit: cover;    
+  object-fit: contain;    
   border-radius: 50%;   
   border: 10px solid #fff; 
   box-shadow: 0 2px 8px rgba(0,0,0,0.15); 
@@ -206,13 +206,13 @@
   cursor: pointer;
   transition: 0.5s;
   border: white 2px solid;
-=======
+
   color:white;
->>>>>>> fc26068 (Initital commit)
-=======
+
+
   border: none;
   color: white;
->>>>>>> 570a604 (Update Hero, Achievements, and About components styles and content)
+
 }
 
 .hero-connect:hover {

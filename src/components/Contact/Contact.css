@@ -101,6 +101,7 @@
     margin-bottom: 50px;
     cursor: pointer;
     transition: 0.3s;
+    
 }
 .contact-submit:hover{
     transform: scale(1.1);
@@ -135,5 +136,7 @@
     .contact-submit{
         width: 40%;
         padding: 15px 0;
+        
+
     }
 }
